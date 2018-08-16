@@ -1,4 +1,4 @@
-window.onload = add_input_txt;
+window.onload = create_grid(10);
 
 const DELAY = 400;
 const CA_GEN= 10;
@@ -187,12 +187,8 @@ function add_direction_div(){
   return direction_div;
 }
 
-function create_grid()
+function create_grid(num = 10)
 {
-  document.getElementById("txt_div").style.display = 'none';           // Hide
-  let txt = document.getElementById('itf').value;
-  //console.log("button pressed " + parseInt(txt)) ;
-  let num = parseInt(txt);
   if(!num)
   {
     num = 10;
@@ -273,7 +269,7 @@ function add_grid(num){
   }
 }
 
-function modify_grid(arr2d){
+function modify_table_grid(arr2d){
   let tbl  = document.getElementById("tbl");
   for(let y = arr2d.length-1; y >= 0; y--)
   {
@@ -374,8 +370,23 @@ function get_world_array(str){
 }
 
 function set_alg(alg){
+  //remove uneeded options
+  //let ff = document.getElementById('flood_fldset');
+  //ff.parentNode.removeChild(ff);
+  //let ca = document.getElementById('ca_fldset');
+  //ca.parentNode.removeChild(ca);
+
+
+  let b = document.createElement("button");
+  b.onclick =  alg;
+  b.innerHTML = 'Run';
+
+  let tgt = document.getElementById('alg_fldset');
+  tgt.parentNode.replaceChild(b, tgt);
+
   window.addEventListener("keyup", event => {
     console.log(event.key);
+
     if (event.key == " ") {
       alg();
     }
@@ -541,7 +552,7 @@ function cellular_automata(target = false){
   for(let cell of live_cells){
     world_array[cell[0]][cell[1]] = 1;
   }
-  modify_grid(world_array);
+  modify_table_grid(world_array);
 }
 
 function is_Auto(){

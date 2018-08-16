@@ -1,8 +1,12 @@
 body {
-  color: rgb(240, 240, 256);
-  background-color: rgb(64, 64, 64); 
+  color: white; 
+  background-color: black; 
 }
 div{
+  margin: none;
+  border: 2px solid green;
+}
+div.none{
   width: 100%;
   height: 100%;
   margin: none;
@@ -44,8 +48,8 @@ table {
   align: center;
 }
 td.unselected {
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: black;
   color: white;
   margin: 0 auto;
@@ -54,8 +58,8 @@ td.unselected {
   text-align: center;
 }
 td.selected {
-  width : 40px;e
-  height : 40px;
+  width : 3.3333333333333335em;e
+  height : 3.3333333333333335em;
   background-color: rgb(0,256,0);
   color: white;
   margin: 0 auto;
@@ -64,8 +68,8 @@ td.selected {
   text-align: center;
 }
 td.selected_white{
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: white;
   color: black;
   margin: 0 auto;
@@ -74,8 +78,8 @@ td.selected_white{
   text-align: center;
 }
 td.selected_yellow{
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: yellow;
   color: black;
   margin: 0 auto;
@@ -84,8 +88,8 @@ td.selected_yellow{
   text-align: center;
 }
 td.selected_green {
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: green;
   color: white;
   margin: 0 auto;
@@ -94,8 +98,8 @@ td.selected_green {
   text-align: center;
 }
 td.selected_blue{
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: blue;
   color: white;
   margin: 0 auto;
@@ -104,8 +108,8 @@ td.selected_blue{
   text-align: center;
 }
 td.selected_purple{
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: purple;
   color: white;
   margin: 0 auto;
@@ -114,8 +118,8 @@ td.selected_purple{
   text-align: center;
 }
 td.selected_orange{
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: orange;
   color: white;
   margin: 0 auto;
@@ -124,8 +128,8 @@ td.selected_orange{
   text-align: center;
 }
 td.selected_red {
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: red;
   color: white;
   margin: 0 auto;
@@ -134,8 +138,8 @@ td.selected_red {
   text-align: center;
 }
 td.selected_brown{
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: brown;
   color: white;
   margin: 0 auto;
@@ -144,8 +148,8 @@ td.selected_brown{
   text-align: center;
 }
 td.selected2 {
-  width : 40px;
-  height : 40px;
+  width : 3.3333333333333335em;
+  height : 3.3333333333333335em;
   background-color: blue;
   color: white;
   margin: 0 auto;
